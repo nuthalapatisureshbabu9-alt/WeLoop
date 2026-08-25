@@ -4,24 +4,18 @@ workflows:
     max_build_duration: 60
     instance_type: mac_mini_m2
     environment:
-      groups:
-        - google_play
-      vars:
-        PACKAGE_NAME: "com.weloop.local"
       node: 18
-      npm: 8
     scripts:
       - name: Install dependencies
         script: |
+          npm install -g expo-cli eas-cli
           npm install
+      - name: Prebuild Android
+        script: |
+          npx expo prebuild --platform android --no-install --non-interactive
       - name: Build APK
         script: |
-          npx expo prebuild
           cd android
           ./gradlew assembleRelease
     artifacts:
       - android/app/build/outputs/**/*.apk
-    publishing:
-      email:
-        recipients:
-          - nuthalapatisureshbabu9@gmail.com
