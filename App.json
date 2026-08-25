@@ -4,7 +4,7 @@
     "slug": "weloop",
     "version": "1.0.0",
     "android": {
-      "package": "com.weloop.local"
+      "package": "com.weloop.app"
     },
     "extra": {
       "eas": {
