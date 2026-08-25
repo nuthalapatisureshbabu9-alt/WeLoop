@@ -3,11 +3,21 @@
     "name": "WeLoop",
     "slug": "weloop",
     "version": "1.0.0",
+    "icon": "./assets/icon.png",
     "android": {
-      "package": "com.weloop.app"
+      "package": "com.weloop.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      }
     },
     "ios": {
       "bundleIdentifier": "com.weloop.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a13a41b6-ba38-458b-88a6-652213366e5c"
+      }
     }
   }
 }
