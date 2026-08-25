@@ -8,14 +8,10 @@ workflows:
     scripts:
       - name: Install dependencies
         script: |
-          npm install -g expo-cli eas-cli
+          npm install -g eas-cli
           npm install
-      - name: Prebuild Android
+      - name: Build APK with EAS
         script: |
-          npx expo prebuild --platform android --no-install --non-interactive
-      - name: Build APK
-        script: |
-          cd android
-          ./gradlew assembleRelease
+          eas build --platform android --profile preview --non-interactive --no-wait || npx expo prebuild --platform android --clean --no-install && cd android && ./gradlew assembleRelease
     artifacts:
       - android/app/build/outputs/**/*.apk
