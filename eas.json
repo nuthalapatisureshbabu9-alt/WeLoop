@@ -11,11 +11,15 @@
       "distribution": "internal"
     },
     "production": {
-      "node": "20.18.0",
-      "env": {
-        "NODE_OPTIONS": "--max-old-space-size=8192"
-      }
-    }
+  "node": "20.18.0",
+  "env": {
+    "NODE_OPTIONS": "--max-old-space-size=8192"
+  },
+  "cache": {
+    "disabled": true
+  }
+}
+    
   },
   "submit": {
     "production": {}
