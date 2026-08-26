@@ -3,28 +3,11 @@
     "name": "WeLoop",
     "slug": "weloop",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "android": {
-      "package": "com.weloop.app",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#ffffff"
-      }
+      "package": "com.weloop.app"
     },
     "ios": {
       "bundleIdentifier": "com.weloop.app"
-    },
-    "platforms": ["ios", "android"],
-    "extra": {
-      "eas": {
-        "projectId": "9527ca2a-08c5-4644-8a52-191c646e8867"
-      }
     }
   }
 }
