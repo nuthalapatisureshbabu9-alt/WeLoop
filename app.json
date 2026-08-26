@@ -3,6 +3,7 @@
     "name": "WeLoop",
     "slug": "weloop",
     "version": "1.0.0",
+    "owner": "suresh007rs-team",
     "android": {
       "package": "com.weloop.app"
     },
@@ -11,7 +12,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "9527ca2a-08c5-4e44-8a52-191ce64e8867"
+        "projectId": "9527ca2a-08c5-4e44-8a52-191c646e8867"
       }
     }
   }
